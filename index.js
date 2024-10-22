@@ -186,9 +186,7 @@ hero.style.textTransform = "capitalize";
 
 let aboutElement = document.querySelector("#about__main");
 let aboutText = aboutElement.textContent;
-console.log(aboutText);
 let splitText = aboutText.split("");
-console.log(splitText);
 aboutElement.innerHTML = splitText.map((val) => `<span>${val}</span>`).join("");
 
 //Calling loading page
